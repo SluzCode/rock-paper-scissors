@@ -1,0 +1,12 @@
+p {
+    color: purple;
+    margin: 0.5em 0;
+    background-color: lightgrey;
+    text-align: center;
+  }
+  
+  * {
+    box-sizing: border-box;
+    background-color: darkgrey;
+  }
+  
