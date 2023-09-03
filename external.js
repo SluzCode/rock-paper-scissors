@@ -45,9 +45,67 @@ function getPlayerChoice() {
   return playerChoice
 }
 
+// let playerSelection = getPlayerChoice();
+// const computerSelection = getComputerChoice();
+// playRound(playerSelection, computerSelection)
 
 
-let playerChoice = getPlayerChoice()
+
+function playRound(playerSelection, computerSelection) {
+
+  let result = "";
+
+if (playerSelection[0] === computerSelection[0]) {
+    result = "you tied!"
+  
+} else if (playerSelection === "Rock"){
+  if (computerSelection === "Scissors"){
+    result = "you win!"
+  }
+  else{
+    result = "you lose!"
+  }
+}
+  else if (playerSelection === "Paper"){
+  if (computerSelection === "Rock"){
+    result = "you win!"
+  }
+  else{
+    result = "you lose!"
+  }
+}
+
+else if (playerSelection === "Scissors"){
+  if (computerSelection === "Paper"){
+    result = "you win!"
+  }
+  else{
+    result = "you lose!"
+  }
+}
+
+console.log("You played " + playerSelection + " and the computer played " + computerSelection + ", " + result)
+
+let outcome = ("You played " + playerSelection + " and the computer played " + computerSelection + ", " + result)
+
+return outcome
+}
+
+
+// playRound(playerSelection, computerSelection)
+
+
+function clickToPlay(){
+
+let playerSelection = getPlayerChoice();
+const computerSelection = getComputerChoice();
+let outcome = playRound(playerSelection, computerSelection)
+
+document.getElementById("output-text").innerHTML = outcome;
+
+}
+
+
 
 /*  
 
