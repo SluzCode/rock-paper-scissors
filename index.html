@@ -11,10 +11,17 @@
 
 <body>
 
-    <h1>Let's Play Rock Paper Scissors!</h1>
+    <h1>Click to Play Rock Paper Scissors!</h1>
 
-    <button onclick="clickToPlay()">Play a round!</button>
+    <!-- <button onclick="clickToPlay()">Play a round!</button> -->
      
+    <div id="button-container">
+        <button onclick="clickPlayerSelection('Rock')">Play Rock!</button>
+        <button onclick="clickPlayerSelection('Paper')">Play Paper!</button>
+        <button onclick="clickPlayerSelection('Scissors')">Play Scissors!</button>
+    </div>
+
+
     <p id="output-text"></p>
 
     <!-- <script src="external.js"></script> -->

@@ -1,10 +1,14 @@
-p {
+
+
+
+p, h1 {
     color: purple;
     margin: 0.5em 0;
     background-color: lightgrey;
     text-align: center;
     font-size: 48px;
     border-radius: 25px;
+    font-family: Arial, Helvetica, sans-serif;
   }
   
 button{
@@ -22,7 +26,7 @@ button{
 }
 
 
-
+/* 
   * {
     box-sizing: border-box;
     background-color: darkgrey;
@@ -32,4 +36,11 @@ button{
     align-items: center;
     
   }
-  
+   */
+  #button-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:center;
+    gap: 32px;
+  }

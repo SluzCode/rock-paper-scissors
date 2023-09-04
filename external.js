@@ -18,8 +18,8 @@ return randomChoice()
 
 }
 
-function getPlayerChoice() {
-  let playerInput = prompt("Make your selection:", "Rock, Paper, or Scissors");
+function getPlayerChoice(playerInput) {
+  // let playerInput = prompt("Make your selection:", "Rock, Paper, or Scissors");
   
   const choices = ["Rock", "Paper", "Scissors"];
 
@@ -95,17 +95,25 @@ return outcome
 // playRound(playerSelection, computerSelection)
 
 
-function clickToPlay(){
+// function clickToPlay(){
 
-let playerSelection = getPlayerChoice();
-const computerSelection = getComputerChoice();
-let outcome = playRound(playerSelection, computerSelection)
+// let playerSelection = getPlayerChoice();
+// const computerSelection = getComputerChoice();
+// let outcome = playRound(playerSelection, computerSelection)
 
-document.getElementById("output-text").innerHTML = outcome;
+// document.getElementById("output-text").innerHTML = outcome;
 
-}
+// }
 
+function clickPlayerSelection(input){
 
+  let playerSelection = getPlayerChoice(input);
+  const computerSelection = getComputerChoice();
+  let outcome = playRound(playerSelection, computerSelection)
+  
+  document.getElementById("output-text").innerHTML = outcome;
+  
+  }
 
 /*  
 
